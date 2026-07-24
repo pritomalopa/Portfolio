@@ -104,7 +104,7 @@ export const projects: Project[] = [
     stack: ['TODO', 'Add', 'Your', 'Tech', 'Stack'],
     liveLink: 'https://crowdspark-client.vercel.app/',
     githubLink: 'https://github.com/pritomalopa/crowdspark-client.git', // TODO
-    image: '/assets/crowdspark.jpg', // will show automatically once you add this file to public/assets
+    image: '/assets/crowdspark.png', // will show automatically once you add this file to public/assets
     challenges: [
       // TODO
       `The toughest part was designing the credit escrow logic — a supporter's credits get deducted the instant they contribute, then either get added to the campaign's raised total (on approval) or refunded back (on rejection), and deleting a campaign has to auto-refund every already-approved supporter, all without letting any credits get created or lost in the process. Building the withdrawal system was equally tricky, since approving a withdrawal has to proportionally deduct the requested amount across a creator's multiple campaigns (oldest-first) while keeping each campaign's amount_raised accurate. On top of that, coordinating Firebase auth with role-based route protection (Supporter/Creator/Admin checked via a DB lookup on every request) and getting the Vite/Vercel deployment right — where a stale VITE_API_URL gets baked into the build, or a missing DB_NAME env var silently connects to the wrong database — caused real production issues that took careful debugging to trace.`,
