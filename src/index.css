@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body text-graphite bg-paper antialiased;
+}
+
+::selection {
+  @apply bg-signal/30 text-graphite;
+}
+
+/* Corner registration marks — evokes technical drawing sheet corners */
+.drawing-frame {
+  position: relative;
+}
+.drawing-frame::before,
+.drawing-frame::after,
+.drawing-frame > .corner-tl,
+.drawing-frame > .corner-br {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: currentColor;
+  opacity: 0.55;
+}
+.drawing-frame::before {
+  top: 0;
+  left: 0;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+.drawing-frame::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+}
+
+/* Dimension-line style divider, like measurement lines on a technical drawing */
+.dim-line {
+  position: relative;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.35;
+}
+.dim-line::before,
+.dim-line::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  width: 1px;
+  height: 11px;
+  background: currentColor;
+  opacity: 0.6;
+}
+.dim-line::before {
+  left: 0;
+}
+.dim-line::after {
+  right: 0;
+}
+
+/* Small uppercase index label, e.g. "01 — About" */
+.sheet-label {
+  @apply font-mono text-xs tracking-widest uppercase;
+}
+
+/* Slow, subtle floating motion for the small background motif icons */
+@keyframes float-a {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-14px, -22px) rotate(6deg); }
+}
+@keyframes float-b {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(16px, 18px) rotate(-5deg); }
+}
+@keyframes float-c {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-10px, 16px) rotate(4deg); }
+}
+.animate-float-a { animation: float-a 13s ease-in-out infinite; }
+.animate-float-b { animation: float-b 17s ease-in-out infinite; }
+.animate-float-c { animation: float-c 15s ease-in-out infinite; }
