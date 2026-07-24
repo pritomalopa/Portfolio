@@ -14,7 +14,8 @@ export const siteConfig = {
   // to "Anyone with the link", copy the shareable link, and paste it below.
   // Nothing else in the code needs to change — this single line controls the
   // "Resume" button across the whole site.
-  resumeLink: 'https://drive.google.com/file/d/1NXE19mWxGTPZ5mhzGbpg1QcJvAtZbJ9x/view?usp=sharing', // TODO
+  // Direct download link - replace with your resume file ID from Google Drive
+  resumeLink: 'https://drive.google.com/uc?export=download&id=1NXE19mWxGTPZ5mhzGbpg1QcJvAtZbJ9x',
 
   // Contact
   email: 'pritomalopa100@gmail.com',

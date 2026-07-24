@@ -74,8 +74,7 @@ export default function Navbar() {
           ))}
           <a
             href={siteConfig.resumeLink}
-            target="_blank"
-            rel="noreferrer"
+            download="Pritoma_Paul_Lopa_Resume.pdf"
             className="ml-2 rounded-sm border border-blueprint bg-blueprint px-4 py-2 font-mono text-xs uppercase tracking-widest text-paper transition-colors hover:bg-blueprint-deep"
           >
             Resume
@@ -105,8 +104,7 @@ export default function Navbar() {
           ))}
           <a
             href={siteConfig.resumeLink}
-            target="_blank"
-            rel="noreferrer"
+            download="Pritoma_Paul_Lopa_Resume.pdf"
             className="mt-3 block rounded-sm bg-blueprint px-4 py-3 text-center font-mono text-xs uppercase tracking-widest text-paper"
           >
             Resume

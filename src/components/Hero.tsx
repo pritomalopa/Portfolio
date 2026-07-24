@@ -31,8 +31,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href={siteConfig.resumeLink}
-              target="_blank"
-              rel="noreferrer"
+              download="Pritoma_Paul_Lopa_Resume.pdf"
               className="inline-flex items-center gap-2 border border-signal bg-signal px-5 py-3 font-mono text-xs uppercase tracking-widest text-graphite transition-colors hover:bg-transparent hover:text-signal"
             >
               <FileDown size={16} />
