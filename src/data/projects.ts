@@ -97,11 +97,11 @@ export const projects: Project[] = [
   {
     slug: 'crowdspark',
     name: 'CrowdSpark',
-    tagline: 'A credit-powered crowdfunding platform where Creators launch campaigns, Supporters back them, and Admins keep everything running smoothly.',
+    tagline: 'TODO: add a one-line tagline for this project',
     description:
       // TODO: replace with a real description of what CrowdSpark does and how it's built
       'CrowdSpark is a full-stack web application. Replace this paragraph with a description of the problem it solves, who it is for, and how the frontend and backend are structured.',
-    stack: ['React', 'MongoDB', 'Node.js', 'Express', 'Stripe'],
+    stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
     liveLink: 'https://crowdspark-client.vercel.app/',
     githubLink: 'https://github.com/pritomalopa/crowdspark-client.git', // TODO
     image: '/assets/crowdspark.png', // will show automatically once you add this file to public/assets
