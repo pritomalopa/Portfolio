@@ -6,12 +6,12 @@ export default function ProjectThumb({ name, image }: { name: string; image?: st
   const showImage = image && !errored
 
   return (
-    <div className="relative aspect-video w-full overflow-hidden border border-blueprint/10 bg-blueprint-deep">
+    <div className="relative aspect-[16/9] w-full overflow-hidden border-0 bg-blueprint-deep rounded-t-2xl">
       {showImage ? (
         <img
           src={image}
           alt={`${name} screenshot`}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           onError={() => setErrored(true)}
         />
       ) : (

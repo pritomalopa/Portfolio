@@ -5,7 +5,7 @@ import ProjectThumb from './ProjectThumb'
 
 export default function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
-    <div className="group flex flex-col border border-blueprint/10 bg-white/50 transition-shadow hover:shadow-lg">
+    <div className="group flex h-full flex-col border border-blueprint/10 bg-white/50 transition-all hover:shadow-lg rounded-2xl overflow-visible">
       <ProjectThumb name={project.name} image={project.image} />
       <div className="flex flex-1 flex-col p-5">
         <span className="sheet-label text-signal">{String(index + 1).padStart(2, '0')}</span>

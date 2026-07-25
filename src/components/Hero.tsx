@@ -2,6 +2,7 @@ import { Github, Linkedin, Twitter, Facebook, Mail, ArrowDown, FileDown } from '
 import { siteConfig } from '../data/config'
 import ProfilePhoto from './ProfilePhoto'
 import FloatingIcons from './FloatingIcons'
+import AnimatedText from './AnimatedText'
 
 const SOCIAL_ICONS: Record<string, any> = {
   github: Github,
@@ -19,13 +20,13 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-5 py-20 md:grid-cols-[1.2fr_0.8fr] md:gap-16 md:px-8 md:py-28">
         <div>
           <h1 className="font-display text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
-            {siteConfig.name}
+            <AnimatedText text={siteConfig.name} as="h1" delay={40} />
           </h1>
           <p className="mt-3 font-mono text-sm uppercase tracking-widest text-circuit sm:text-base">
-            {siteConfig.designation}
+            <AnimatedText text={siteConfig.designation} delay={25} />
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-paper/75 sm:text-lg">
-            {siteConfig.tagline}
+            <AnimatedText text={siteConfig.tagline} delay={15} />
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
